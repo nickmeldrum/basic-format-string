@@ -4,7 +4,8 @@
   "description": "A basic string formatter to make ugly string concatenations a thing of the past.",
   "main": "lib\\format-string.js",
   "scripts": {
-    "test": "make test"
+    "test": "grunt nodeunit",
+    "watch": "grunt watch"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,6 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-nodeunit": "^0.4.1",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
