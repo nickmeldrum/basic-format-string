@@ -9,7 +9,9 @@ A basic string formatter to make ugly string concatenations a thing of the past.
 
 ## Usage
 
-    var format = require('basic-format-string');
+### For dotnet/ c# style string formatting:
+
+    var format = require('basic-format-string').dotNetStyle;
 
     var input = 'hello {0}';
 

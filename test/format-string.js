@@ -1,7 +1,7 @@
-var format = require('../lib/format-string');
+var format = require('../lib/format-string').dotNetStyle;
 
 exports['test'] = {
-  'with no positional we just get the same output as we input': function(test) {
+  'dotnetstyle: with no positional we just get the same output as we input': function(test) {
     test.expect(1);
     
     var string = 'hello everyone';
@@ -10,7 +10,7 @@ exports['test'] = {
     test.equal(newstring, 'hello everyone', 'string don\'t look right');
     test.done();
   },
-  'adds a string into 1 position': function(test) {
+  'dotnetstyle: adds a string into 1 position': function(test) {
     test.expect(1);
     
     var string = 'hello {0}';
@@ -19,7 +19,7 @@ exports['test'] = {
     test.equal(newstring, 'hello world', 'string don\'t look right');
     test.done();
   },
-  'adds arguments in positional order': function(test) {
+  'dotnetstyle: adds arguments in positional order': function(test) {
     test.expect(1);
     
     var string = 'hello {1} {2} {0}';
